@@ -4490,7 +4490,7 @@ a.tabnav-extra:hover {
 
 .css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
     display: inline-block;
-    max-width: 125px;
+    max-width: 190px;
     overflow: hidden;
     text-overflow: ellipsis;
     vertical-align: top;
