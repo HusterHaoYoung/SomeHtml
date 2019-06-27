@@ -689,7 +689,7 @@ Header
 /* navigation */
 #mainnav {
     display: block;
-    float: right;
+    /*float: right;*/
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;

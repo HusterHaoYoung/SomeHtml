@@ -3081,7 +3081,7 @@ p.explain .minibutton {
 }
 
 .container-lg, .container-xl {
-    margin-left: auto;
+    margin-left: 150px;
     margin-right: auto
 }
 
@@ -3253,9 +3253,9 @@ p.explain .minibutton {
         width: 16.66667%
     }
 
-    .col-md-3 {
-        width: 25%
-    }
+    /*.col-md-3 {*/
+    /*    width: 25%*/
+    /*}*/
 
     .col-md-4 {
         width: 33.33333%
@@ -4699,9 +4699,9 @@ a.tabnav-extra:hover {
     border-right: 1px solid #e1e4e8 !important
 }
 
-.border-bottom {
-    border-bottom: 1px solid #e1e4e8 !important
-}
+/*.border-bottom {*/
+/*    border-bottom: 1px solid #e1e4e8 !important;*/
+/*}*/
 
 .border-left {
     border-left: 1px solid #e1e4e8 !important
@@ -8198,9 +8198,9 @@ a.tabnav-extra:hover {
         margin: 24px !important
     }
 
-    .mt-lg-4 {
-        margin-top: 24px !important
-    }
+    /*.mt-lg-4 {*/
+    /*    margin-top: 24px !important*/
+    /*}*/
 
     .mr-lg-4 {
         margin-right: 24px !important
