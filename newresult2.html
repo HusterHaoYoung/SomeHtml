@@ -22,7 +22,6 @@
     <meta name="viewport" content="width=device-width">
 
 
-
     <title>华科搜索</title>
     <style>[dir='ltr'], [dir='rtl'] {
         unicode-bidi: -webkit-isolate;
@@ -52,12 +51,9 @@
     }
 
 
-
-
     .srp #gs_st0 {
         padding: 0 2px 0 8px
     }
-
 
 
     .kpbb:hover, .kprb:hover, .kpgb:hover, .kpgrb:hover {
@@ -215,8 +211,6 @@
     }
 
 
-
-
     </style>
     <style id="gstyle">body {
         /*color: #000;*/
@@ -242,13 +236,16 @@
     #res, #res .j {
         line-height: 1.2
     }
+    #sbfrm_l {
+        visibility: inherit !important
+    }
 
-
-
-
-
-
-
+    #resultStats {
+        line-height: 33px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
     .f, .f a:link, .m {
         color: #777;
         line-height: 1.54
@@ -279,7 +276,12 @@
     .blk a {
         color: #000
     }
-
+    #resultStats {
+        padding-left: 16px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 8px
+    }
     #nav a {
         display: block
     }
@@ -290,14 +292,10 @@
     }
 
 
-
-
     #nav td {
         padding: 0;
         text-align: center
     }
-
-
 
 
     #res h3, #extrares h3 {
@@ -343,14 +341,17 @@
     .gl, #foot a, .nobr {
         white-space: nowrap
     }
+
     #appbar, #rhscol {
         min-width: 1100px
     }
+
     #appbar {
         background: white;
         -webkit-box-sizing: border-box;
         width: 100%
     }
+
     #foot #navcnt a {
         color: #4285f4;
         font-weight: normal
@@ -408,7 +409,6 @@
     body .big #subform_ctrl {
         margin-left: 229px
     }
-
 
 
     #rhs .scrt.rhsvw, #rhs table.rhsvw {
@@ -586,7 +586,6 @@
     }
 
 
-
     #top_nav {
         -webkit-user-select: none
     }
@@ -602,7 +601,6 @@
     #hdtb-msb > .hdtb-mitem:first-child, .ab_tnav_wrp, #cnt #center_col, .mw #center_col {
         margin-left: 150px
     }
-
 
 
     .tbou > a.q, #tbpi, #tbtro, .tbt label, #set_location_section a {
@@ -712,7 +710,6 @@
                0% {
                }
            }</style>
-
 
 
 </head>
@@ -1285,7 +1282,6 @@
     a:hover h3 {
         text-decoration: underline
     }
-
 
 
     .gpeho {
@@ -1990,7 +1986,6 @@
     }
 
 
-
     .sbl1 {
         display: flex;
         font-size: 16px;
@@ -2017,22 +2012,21 @@
         <div class="sfbg nojsv" style="margin-top:-20px">
             <div class="sfbgg"></div>
         </div>
-        <form class="tsf nj" action="/search" style="overflow:visible" id="tsf" method="GET" name="f"
+        <form class="tsf nj" action="newresult3.html" style="overflow:visible" id="tsf" method="GET" name="f"
               onsubmit="return q.value!=''" role="search">
             <div id="tophf"><input name="newwindow" value="1" type="hidden"><input name="safe" value="strict" type="hidden"><input
                     value="LAASXaSwFsiW8wXGspbICw" name="ei" type="hidden"></div>
             <div jsmodel="vWNDde" jsdata="MuIEvd;;ASI61E">
                 <div jscontroller="mvYTse" class="A8SBwf"
                      jsaction="DkpM0b:d3sQLd;IQOavd:dFyQEf;XzZZPe:jI3wzf;Aghsf:AVsnlb;iHd9U:Q7Cnrc;f5hEHe:G0jgYd;vmxUb:j3bJnb;R2c5O:LuRugf;qiCkJd:ANdidc;NOg9L:HLgh3;uGoIkd:epUokb;zLdLw:eaGBS;rcuQ6b:npT2md">
-                    <div class="logo"><a
-                            href="images/hustlogo.png"
+                    <div class="logo" style=" padding-left: 10px;"><a
+                            href="images/hustlogo4.png"
                             title="Google 首页" id="logo" data-hveid="7"><img
-                            src="images/hustlogo.png" alt="Google"
-                            width="64"></a></div>
+                            src="images/hustlogo4.png" alt="Google"
+                            height="30" ></a></div>
                     <div class="RNNXgb" jsname="RNNXgb">
                         <div class="SDkEP">
-                            <div jscontroller="iDPoPb" class="a4bIc" jsname="gLFyf"
-                                 jsaction="h5M12e;input:d3sQLd;focus:dFyQEf;blur:jI3wzf">
+                            <div jscontroller="iDPoPb">
                                 <div class="vdLsw gsfi" jsname="vdLsw"></div>
                                 <input class="gLFyf gsfi" maxlength="2048" name="q" type="text" jsaction="paste:puy29d"
                                        aria-autocomplete="both" aria-haspopup="false" autocapitalize="off"
@@ -2041,7 +2035,7 @@
                                        data-ved="0ahUKEwik9pPZvoTjAhVIy7wKHUaZBbkQ39UDCAk"></div>
                         </div>
                         <button class="Tg7LZd" jsname="Tg7LZd" aria-label="Google 搜索" type="submit">
-                            <div class="rINcab"><span class="z1asCe MZy1Rb"><svg focusable="false"
+                            <div class="rINcab" onclick="window.location='https://www.baidu.com/';"><span class="z1asCe MZy1Rb"><svg focusable="false"
                                                                                  xmlns="http://www.w3.org/2000/svg"
                                                                                  viewbox="0 0 24 24"><path
                                     d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>
@@ -2078,6 +2072,74 @@
             </div>
         </form>
     </div>
+
+<!--    <div jscontroller="ZyRBae" jsaction="rcuQ6b:npT2md" class="jsrp" id="searchform">-->
+
+<!--        <div class="sfbg nojsv" style="margin-top:-20px">-->
+<!--            <div class="sfbgg"></div>-->
+<!--        </div>-->
+<!--        <form class="tsf nj" action="/search" style="overflow:visible" id="tsf" method="GET" name="f"-->
+<!--              onsubmit="return q.value!=''" role="search">-->
+<!--            <div id="tophf"><input name="newwindow" value="1" type="hidden"><input name="safe" value="strict"-->
+<!--                                                                                   type="hidden"><input-->
+<!--                    value="LAASXaSwFsiW8wXGspbICw" name="ei" type="hidden"></div>-->
+<!--            <div jsmodel="vWNDde" jsdata="MuIEvd;;ASI61E">-->
+<!--                <div jscontroller="mvYTse" class="A8SBwf"-->
+<!--                     jsaction="DkpM0b:d3sQLd;IQOavd:dFyQEf;XzZZPe:jI3wzf;Aghsf:AVsnlb;iHd9U:Q7Cnrc;f5hEHe:G0jgYd;vmxUb:j3bJnb;R2c5O:LuRugf;qiCkJd:ANdidc;NOg9L:HLgh3;uGoIkd:epUokb;zLdLw:eaGBS;rcuQ6b:npT2md">-->
+<!--                    <div class="logo"><a-->
+<!--                            href="images/hustlogo.png"-->
+<!--                            title="Google 首页" id="logo" data-hveid="7"><img-->
+<!--                            src="images/hustlogo.png" alt="Google"-->
+<!--                            width="64"></a></div>-->
+<!--                    <div class="RNNXgb" jsname="RNNXgb">-->
+<!--                        <div class="SDkEP">-->
+<!--                            <div jscontroller="iDPoPb" class="a4bIc" jsname="gLFyf"-->
+<!--                                 jsaction="h5M12e;input:d3sQLd;focus:dFyQEf;blur:jI3wzf">-->
+<!--                                <div class="vdLsw gsfi" jsname="vdLsw"></div>-->
+<!--                                <input class="gLFyf gsfi" maxlength="2048" name="q" type="text" jsaction="paste:puy29d"-->
+<!--                                       aria-autocomplete="both" aria-haspopup="false" autocapitalize="off"-->
+<!--                                       autocomplete="off" autocorrect="off" role="combobox" spellcheck="false"-->
+<!--                                       title="Google 搜索" value="计算机" aria-label="搜索"-->
+<!--                                       data-ved="0ahUKEwik9pPZvoTjAhVIy7wKHUaZBbkQ39UDCAk"></div>-->
+<!--                        </div>-->
+<!--                        <button class="Tg7LZd" jsname="Tg7LZd" aria-label="Google 搜索" type="submit">-->
+<!--                            <div class="rINcab"><span class="z1asCe MZy1Rb"><svg focusable="false"-->
+<!--                                                                                 xmlns="http://www.w3.org/2000/svg"-->
+<!--                                                                                 viewbox="0 0 24 24"><path-->
+<!--                                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>-->
+<!--                            </div>-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                    <div jscontroller="tg8oTe" class="UUbT9" style="display:none" jsname="UUbT9"-->
+<!--                         jsaction="mouseout:ItzDCd;mouseleave:MWfikb;hBEIVb:nUZ9le;YMFC3:VKssTb">-->
+<!--                        <div class="RjPuVb" jsname="RjPuVb"></div>-->
+<!--                        <div class="aajZCb" jsname="aajZCb">-->
+<!--                            <div class="xtSCL"></div>-->
+<!--                            <ul class="erkvQe" jsname="erkvQe" role="listbox"></ul>-->
+<!--                            <li data-view-type="1" class="sbct" id="sbt" role="presentation">-->
+<!--                                <div class="suggestions-inner-container">-->
+<!--                                    <div class="sbtc" role="option">-->
+<!--                                        <div class="sbl1"><span></span></div>-->
+<!--                                    </div>-->
+<!--                                    <div class="sbab">-->
+<!--                                        <div class="sbai">删除</div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                        </div>-->
+<!--                        <div jsname="JUypV" jscontroller="IvlUe" class="JUypV"-->
+<!--                             data-async-context="async_id:duf3-46;authority:0;card_id:;entry_point:0;feature_id:;ftoe:0;header:0;open:0;suggestions:;suggestions_subtypes:;suggestions_types:;surface:0;title:;type:46">-->
+<!--                            <div jscontroller="xz7cCd" style="display:none" jsaction="rcuQ6b:npT2md"></div>-->
+<!--                            <div id="duf3-46" data-jiis="up" data-async-type="duffy3"-->
+<!--                                 data-async-context-required="type,open,feature_id,async_id,entry_point,authority,card_id,ftoe,title,header,suggestions,surface,suggestions_types,suggestions_subtypes"-->
+<!--                                 class="y yp" data-ved="0ahUKEwik9pPZvoTjAhVIy7wKHUaZBbkQ-0EICg"></div>-->
+<!--                            <a class="duf3 aciXEb" href="#" id="sbfblt" data-async-trigger="duf3-46" jsaction="async.u"-->
+<!--                               data-ved="0ahUKEwik9pPZvoTjAhVIy7wKHUaZBbkQtw8ICw">举报不当的联想查询</a></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
     <div id="main">
         <div id="lb"></div>
         <div id="easter-egg"></div>
@@ -2145,7 +2207,6 @@
             }
 
 
-
             .il8Sef a.f9UGee {
                 color: #5f6368;
                 line-height: 16px;
@@ -2159,7 +2220,6 @@
             #ab_ctls a.ab_button:active, #ab_ctls a.ab_dropdownlnk:active {
                 color: #333
             }
-
 
 
             #bbar a, #mbbar a {
@@ -2181,17 +2241,33 @@
                                             <div aria-selected="false" class="hdtb-mitem hdtb-imb" role="tab"><a
                                                     class="q qs"
                                                     href="/search?q=%E5%BF%85%E5%BA%94&amp;newwindow=1&amp;safe=strict&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwik9pPZvoTjAhVIy7wKHUaZBbkQ_AUIESgC"><span
-                                                    class="HF9Klc ZYMsjf" style="height:16px;width:16px"><svg t="1561713571623" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1829" width="200" height="200"><path d="M712.704 220.672c-135.68-135.68-355.84-135.68-491.52 0s-135.68 355.84 0 491.52 355.84 135.68 491.52 0 135.68-355.84 0-491.52zM145.92 787.456C-31.744 610.304-31.744 322.56 145.92 144.896c177.664-177.152 464.896-177.152 642.56 0 177.664 177.664 177.664 464.896 0 642.56s-465.408 177.664-642.56 0z m848.896 206.336c-24.064 24.064-63.488 24.064-87.552 0L819.2 906.24c-24.064-24.064-24.064-63.488 0-87.552 24.064-24.064 63.488-24.064 87.552 0l87.552 87.552c24.576 24.064 24.576 63.488 0.512 87.552z" p-id="1830"></path></svg></span>全部</a>
+                                                    class="HF9Klc ZYMsjf" style="height:16px;width:16px"><svg
+                                                    t="1561713571623" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" p-id="1829" width="200"
+                                                    height="200"><path
+                                                    d="M712.704 220.672c-135.68-135.68-355.84-135.68-491.52 0s-135.68 355.84 0 491.52 355.84 135.68 491.52 0 135.68-355.84 0-491.52zM145.92 787.456C-31.744 610.304-31.744 322.56 145.92 144.896c177.664-177.152 464.896-177.152 642.56 0 177.664 177.664 177.664 464.896 0 642.56s-465.408 177.664-642.56 0z m848.896 206.336c-24.064 24.064-63.488 24.064-87.552 0L819.2 906.24c-24.064-24.064-24.064-63.488 0-87.552 24.064-24.064 63.488-24.064 87.552 0l87.552 87.552c24.576 24.064 24.576 63.488 0.512 87.552z"
+                                                    p-id="1830"></path></svg></span>全部</a>
                                             </div>
-                                            <div aria-selected="true" class="hdtb-mitem hdtb-msel hdtb-imb" role="tab"><span
-                                                    class="HF9Klc ZYMsjf" style="height:16px;width:16px"><svg t="1561713374167" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1420" width="200" height="200"><path d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0" fill="#1296db" p-id="1421"></path></svg>
+                                            <div aria-selected="true" class="hdtb-mitem hdtb-msel hdtb-imb"
+                                                 role="tab"><span
+                                                    class="HF9Klc ZYMsjf" style="height:16px;width:16px"><svg
+                                                    t="1561713374167" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" p-id="1420" width="200"
+                                                    height="200"><path
+                                                    d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0"
+                                                    fill="#1296db" p-id="1421"></path></svg>
                                                     </span>教师
                                             </div>
 
                                             <div aria-selected="false" class="hdtb-mitem hdtb-imb" role="tab"><a
                                                     class="q qs"
-                                                    href="/search?q=%E5%BF%85%E5%BA%94&amp;newwindow=1&amp;safe=strict&amp;source=lnms&amp;tbm=vid&amp;sa=X&amp;ved=0ahUKEwik9pPZvoTjAhVIy7wKHUaZBbkQ_AUIEigD"><span
-                                                    class="HF9Klc ZYMsjf" style="height:16px;width:16px"><svg t="1561551288761" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1171" width="200" height="200"><path d="M861.5 810.7H594.6c-9.5 36.8-42.9 64-82.6 64-39.9 0-73.4-27.4-82.7-64.3-1.2 0.2-2.5 0.3-3.8 0.3h-263l64 128h571l64-128zM855 768l-89.6-128H261c-0.8 0-1.6 0-2.3-0.1L169 768h256.5c1.3 0 2.6 0.1 3.8 0.3 9.4-37 42.8-64.3 82.7-64.3 39.8 0 73.2 27.2 82.6 64H855zM735.6 597.3L579.9 374.9c-2.5-3.6-3.9-7.9-3.9-12.2V213.3c0-5.7 2.2-11.1 6.2-15.1l48.9-48.9-42.7-42.7h-153l-42.7 42.7 48.9 48.9c4 4 6.2 9.4 6.2 15.1v149.3c0 4.4-1.3 8.6-3.9 12.2L288.4 597.3h447.2zM405.3 222.2l-57.8-57.8c-8.3-8.3-8.3-21.8 0-30.2l64-64c4-4 9.4-6.2 15.1-6.2h170.7c5.7 0 11.1 2.2 15.1 6.2l64 64c8.3 8.3 8.3 21.8 0 30.2l-57.8 57.8V356l294.8 421.2c4.5 6.4 5.1 14.8 1.6 21.8l-85.3 170.7c-3.6 7.2-11 11.8-19.1 11.8H213.3c-8.1 0-15.5-4.6-19.1-11.8L108.9 799c-3.5-7-2.9-15.4 1.6-21.8L405.3 356V222.2zM512 832c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7-42.7 19.1-42.7 42.7S488.4 832 512 832z" fill="" p-id="1172"></path></svg></span>实验室</a></div>
+                                                    href="newresult3.html"><span
+                                                    class="HF9Klc ZYMsjf" style="height:16px;width:16px"><svg
+                                                    t="1561551288761" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" p-id="1171" width="200"
+                                                    height="200"><path
+                                                    d="M861.5 810.7H594.6c-9.5 36.8-42.9 64-82.6 64-39.9 0-73.4-27.4-82.7-64.3-1.2 0.2-2.5 0.3-3.8 0.3h-263l64 128h571l64-128zM855 768l-89.6-128H261c-0.8 0-1.6 0-2.3-0.1L169 768h256.5c1.3 0 2.6 0.1 3.8 0.3 9.4-37 42.8-64.3 82.7-64.3 39.8 0 73.2 27.2 82.6 64H855zM735.6 597.3L579.9 374.9c-2.5-3.6-3.9-7.9-3.9-12.2V213.3c0-5.7 2.2-11.1 6.2-15.1l48.9-48.9-42.7-42.7h-153l-42.7 42.7 48.9 48.9c4 4 6.2 9.4 6.2 15.1v149.3c0 4.4-1.3 8.6-3.9 12.2L288.4 597.3h447.2zM405.3 222.2l-57.8-57.8c-8.3-8.3-8.3-21.8 0-30.2l64-64c4-4 9.4-6.2 15.1-6.2h170.7c5.7 0 11.1 2.2 15.1 6.2l64 64c8.3 8.3 8.3 21.8 0 30.2l-57.8 57.8V356l294.8 421.2c4.5 6.4 5.1 14.8 1.6 21.8l-85.3 170.7c-3.6 7.2-11 11.8-19.1 11.8H213.3c-8.1 0-15.5-4.6-19.1-11.8L108.9 799c-3.5-7-2.9-15.4 1.6-21.8L405.3 356V222.2zM512 832c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7-42.7 19.1-42.7 42.7S488.4 832 512 832z"
+                                                    fill="" p-id="1172"></path></svg></span>实验室</a></div>
                                         </div>
                                         <div aria-selected="false" class="hdtb-mitem hdtb-imb" role="tab"><a
                                                 class="q qs"
@@ -2210,8 +2286,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div><!-- cctlcm 5 cctlcm -->
 
 
@@ -2219,29 +2293,16 @@
 </div>
 
 
-
 </head>
 
 <body class="logged-in env-production page-responsive">
 
-<div class="position-relative js-header-wrapper ">
-    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to
-        content</a>
-    <div id="js-pjax-loader-bar" class="pjax-loader-bar">
-        <div class="progress"></div>
-    </div>
 
-
-
-
-</div>
 
 <div id="start-of-content" class="show-on-focus"></div>
 
 
-<div id="js-flash-container">
 
-</div>
 
 
 <div class="application-main " data-commit-hovercards-enabled>
@@ -2273,143 +2334,43 @@
                 <button class="btn ml-2 d-none d-md-block" type="submit">Search</button>
             </div>
             <div class="col-12 col-md-9 float-left px-2 pt-3 pt-md-0 codesearch-results">
+
                 <div class="px-2">
 
+                    <div id="extabar">
+                        <div id="topabar" style="position:relative">
+                            <div class="ab_tnav_wrp" id="slim_appbar" style="margin-left: 0px">
+                                <div id="sbfrm_l">
+                                    <div id="resultStats" style="    padding-left: 0px">
+                                        <nobr> 找到227条结果&nbsp;</nobr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
 
-<!--                    <div class="Box p-3 mb-4 d-flex">-->
-<!--                        <img src="images/logo1.png" width="64" height="64" class="d-block rounded-1 mr-3 flex-shrink-0"-->
-<!--                             alt="java logo">-->
-<!--                        <div class="d-md-flex flex-items-start flex-auto">-->
-<!--                            <div class="flex-auto">-->
-<!--                                <h3 class="mb-1">Java</h3>-->
-<!--                                <p>Java is an object-oriented programming language used mainly for web, desktop,-->
-<!--                                    embedded devices and mobile applications.</p>-->
-<!--                                <a class="text-small" href="/topics/java">See topic</a>-->
-<!--                            </div>-->
+                    <!--                                        <div class="d-flex flex-column flex-md-row flex-justify-between border-bottom pb-3 position-relative">-->
+<!--                                            <p class="col-12 col-md-9 d-inline-block text-gray mb-2 pr-4">-->
+<!--                                                共检索 27条结果 </em>-->
+<!--                                            </p>-->
+<!--                                            <h3>-->
+<!--                        <span class="v-align-middle">-->
+<!--                          共检索 27条结果-->
+<!--                        </span>-->
+<!--                                                <a href="https://help.github.com/articles/searching-github#potential-timeouts"-->
+<!--                                                   class="help tooltipped tooltipped-e"-->
+<!--                                                   aria-label="This search took too long to finish; some results may not be shown.">-->
+<!--                                                    <svg class="octicon octicon-question muted-link" viewBox="0 0 14 16" version="1.1"-->
+<!--                                                         width="14" height="16" aria-hidden="true">-->
+<!--                                                        <path fill-rule="evenodd"-->
+<!--                                                              d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/>-->
+<!--                                                    </svg>-->
+<!--                                                </a>-->
 
+<!--                                            </h3>-->
 
-<!--                            <div class="d-inline-block js-toggler-container starring-container ">-->
-<!--                                &lt;!&ndash; '"` &ndash;&gt;&lt;!&ndash; </textarea></xmp> &ndash;&gt;</option></form>-->
-<!--                                <form class="starred" action="/topics/java/unstar" accept-charset="UTF-8"-->
-<!--                                      data-remote="true" method="post"><input name="utf8" type="hidden"-->
-<!--                                                                              value="&#x2713;"/><input type="hidden"-->
-<!--                                                                                                       name="_method"-->
-<!--                                                                                                       value="delete"/><input-->
-<!--                                        type="hidden" name="authenticity_token"-->
-<!--                                        value="iZaRe80357Cbue6T8o59WwcChHVhjGSYBpZQs6cu0RxY+ZmrL54n4BJRWbhDR8q+DnLfy+vZnFs2wVWFEWNkxQ=="/>-->
-<!--                                    <input type="hidden" name="context" value="topic">-->
-<!--                                    <button-->
-<!--                                            class="btn btn-sm js-toggler-target"-->
-<!--                                            type="submit"-->
-<!--                                            value="Unstar"-->
-<!--                                            aria-label="Unstar this topic"-->
-<!--                                            title="Unstar java"-->
-<!--                                            data-ga-click="Topic, click unstar button, action:codesearch#index; text:Unstar"-->
-<!--                                    >-->
-<!--                                        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1"-->
-<!--                                             width="14" height="16" aria-hidden="true">-->
-<!--                                            <path fill-rule="evenodd"-->
-<!--                                                  d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/>-->
-<!--                                        </svg>-->
-<!--                                        Unstar-->
-<!--                                    </button>-->
-<!--                                </form>-->
-<!--                                &lt;!&ndash; '"` &ndash;&gt;&lt;!&ndash; </textarea></xmp> &ndash;&gt;</option></form>-->
-<!--                                <form class="unstarred" action="/topics/java/star" accept-charset="UTF-8"-->
-<!--                                      data-remote="true" method="post"><input name="utf8" type="hidden"-->
-<!--                                                                              value="&#x2713;"/><input type="hidden"-->
-<!--                                                                                                       name="authenticity_token"-->
-<!--                                                                                                       value="/+y3MLKvukxkxKVmcJxece/OCKIlK2AQc0EBaV5+1LPRxurZWIo3ftG756F9RbcH9UP4V+NAqLdqScuQhf6KjQ=="/>-->
-<!--                                    <input type="hidden" name="context" value="topic">-->
-<!--                                    <button-->
-<!--                                            class="btn btn-sm js-toggler-target"-->
-<!--                                            type="submit"-->
-<!--                                            value="Star"-->
-<!--                                            aria-label="Star this topic"-->
-<!--                                            title="Star java"-->
-<!--                                            data-ga-click="Topic, click star button, action:codesearch#index; text:Star"-->
-<!--                                    >-->
-<!--                                        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1"-->
-<!--                                             width="14" height="16" aria-hidden="true">-->
-<!--                                            <path fill-rule="evenodd"-->
-<!--                                                  d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/>-->
-<!--                                        </svg>-->
-<!--                                        Star-->
-<!--                                    </button>-->
-<!--                                </form>-->
-<!--                            </div>-->
-
-<!--                        </div>-->
-<!--                    </div>-->
-
-
-<!--                    <div class="d-flex flex-column flex-md-row flex-justify-between border-bottom pb-3 position-relative">-->
-<!--                        <h3>-->
-<!--    <span class="v-align-middle">-->
-<!--      共检索 27条结果-->
-<!--    </span>-->
-<!--&lt;!&ndash;                            <a href="https://help.github.com/articles/searching-github#potential-timeouts"&ndash;&gt;-->
-<!--&lt;!&ndash;                               class="help tooltipped tooltipped-e"&ndash;&gt;-->
-<!--&lt;!&ndash;                               aria-label="This search took too long to finish; some results may not be shown.">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <svg class="octicon octicon-question muted-link" viewBox="0 0 14 16" version="1.1"&ndash;&gt;-->
-<!--&lt;!&ndash;                                     width="14" height="16" aria-hidden="true">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <path fill-rule="evenodd"&ndash;&gt;-->
-<!--&lt;!&ndash;                                          d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </svg>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </a>&ndash;&gt;-->
-
-
-<!--                        </h3>-->
-
-<!--                        <details class="d-none d-md-block mt-2 mt-sm-0 details-reset details-overlay select-menu">-->
-<!--                            <summary class="btn btn-sm select-menu-button">-->
-<!--                                &lt;!&ndash;                                <i>Sort:</i>&ndash;&gt;-->
-<!--                                <span data-menu-button>综合</span>-->
-<!--                            </summary>-->
-<!--                            <details-menu class="select-menu-modal position-absolute right-0" style="z-index: 99;"-->
-<!--                                          aria-label="Sort options">-->
-<!--                                <div class="select-menu-header" tabindex="-1">-->
-<!--                                    <span class="select-menu-title">选择结果类型</span>-->
-<!--                                </div>-->
-<!--                                <div class="select-menu-list">-->
-<!--                                    <a class="select-menu-item" role="menuitemradio" aria-checked="true"-->
-<!--                                       data-pjax="true" data-pjax-preserve-scroll="true"-->
-<!--                                       href="/search?o=desc&amp;q=java&amp;s=&amp;type=Repositories">-->
-<!--                                        <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16"-->
-<!--                                             version="1.1" width="12" height="16" aria-hidden="true">-->
-<!--                                            <path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/>-->
-<!--                                        </svg>-->
-<!--                                        <span class="select-menu-item-text" data-menu-button-text>综合</span>-->
-<!--                                    </a>-->
-<!--                                    <a class="select-menu-item" role="menuitemradio" aria-checked="false"-->
-<!--                                       data-pjax="true" data-pjax-preserve-scroll="true"-->
-<!--                                       href="/search?o=desc&amp;q=java&amp;s=stars&amp;type=Repositories">-->
-<!--                                        <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16"-->
-<!--                                             version="1.1" width="12" height="16" aria-hidden="true">-->
-<!--                                            <path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/>-->
-<!--                                        </svg>-->
-<!--                                        <span class="select-menu-item-text" data-menu-button-text>教师</span>-->
-<!--                                    </a>-->
-<!--                                    <a class="select-menu-item" role="menuitemradio" aria-checked="false"-->
-<!--                                            data-pjax="true" data-pjax-preserve-scroll="true"-->
-<!--                                            href="/search?o=desc&amp;q=java&amp;s=stars&amp;type=Repositories">-->
-<!--                                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16"-->
-<!--                                         version="1.1" width="12" height="16" aria-hidden="true">-->
-<!--                                        <path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/>-->
-<!--                                    </svg>-->
-<!--                                    <span class="select-menu-item-text" data-menu-button-text>实验室</span>-->
-<!--                                </a> <a class="select-menu-item" role="menuitemradio" aria-checked="false"-->
-<!--                                        data-pjax="true" data-pjax-preserve-scroll="true"-->
-<!--                                        href="/search?o=asc&amp;q=java&amp;s=stars&amp;type=Repositories">-->
-<!--                                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16"-->
-<!--                                         version="1.1" width="12" height="16" aria-hidden="true">-->
-<!--                                        <path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/>-->
-<!--                                    </svg>-->
-<!--                                    <span class="select-menu-item-text" data-menu-button-text>相关动态</span>-->
-<!--                                </a></div>-->
-<!--                            </details-menu>-->
-<!--                        </details>-->
-<!--                    </div>-->
+<!--                                        </div>-->
 
 
                     <ul class="repo-list">
@@ -2420,7 +2381,7 @@
                                     <a class="v-align-middle"
                                        data-hydro-click="{&quot;event_type&quot;:&quot;search_result.click&quot;,&quot;payload&quot;:{&quot;page_number&quot;:1,&quot;per_page&quot;:10,&quot;query&quot;:&quot;java&quot;,&quot;result_position&quot;:1,&quot;click_id&quot;:63477660,&quot;result&quot;:{&quot;id&quot;:63477660,&quot;global_relay_id&quot;:&quot;MDEwOlJlcG9zaXRvcnk2MzQ3NzY2MA==&quot;,&quot;model_name&quot;:&quot;Repository&quot;,&quot;url&quot;:&quot;https://github.com/TheAlgorithms/Java&quot;},&quot;client_id&quot;:&quot;832503728.1554952581&quot;,&quot;originating_request_id&quot;:&quot;A6DE:592A:738121:A30ADC:5D0A21AE&quot;,&quot;originating_url&quot;:&quot;https://github.com/search?q=java&quot;,&quot;referrer&quot;:&quot;https://github.com/&quot;,&quot;user_id&quot;:38208164}}"
                                        data-hydro-click-hmac="92b2dbd3fae02e16e85acdc52628ba9aa27e0a730bac60d144daee52ec386410"
-                                       href="/TheAlgorithms/Java">金海</em></a>
+                                       href="http://faculty.hust.edu.cn/jinhai/zh_CN/index.htm">金海</em></a>
 
                                 </h3>
 
@@ -2429,16 +2390,11 @@
                                 </p>
 
                                 <div class="topics-row-container col-12 col-md-9 d-inline-flex flex-wrap flex-items-center f6 my-1">
-                                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/java" title="Topic: java"
-                                       data-ga-click="Topic, search results" data-octo-click="topic_click"
-                                       data-octo-dimensions="topic:java,repository_id:63477660,repository_nwo:TheAlgorithms/&lt;em&gt;Java&lt;/em&gt;,repository_public:true,repository_is_fork:false">
+                                    <a class="topic-tag topic-tag-link f6 my-1">
                                         教授
                                     </a>
 
-                                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/algorithms"
-                                       title="Topic: algorithms" data-ga-click="Topic, search results"
-                                       data-octo-click="topic_click"
-                                       data-octo-dimensions="topic:algorithms,repository_id:63477660,repository_nwo:TheAlgorithms/&lt;em&gt;Java&lt;/em&gt;,repository_public:true,repository_is_fork:false">
+                                    <a class="topic-tag topic-tag-link f6 my-1" >
                                         博士生导师
                                     </a>
                                 </div>
@@ -2449,35 +2405,35 @@
                                         博士，教授，博士生导师。华中科技大学“服务计算技术与系统”教育部重点实验室&“集群与网格计算”湖北省重点实验室主任...
                                     </p>
 
-<!--                                    <a class="muted-link f6 mt-2"-->
-<!--                                       href="/TheAlgorithms/Java/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen">-->
-<!--                                        2 issues-->
-<!--                                        need help-->
-<!--                                    </a>-->
+                                    <!--                                    <a class="muted-link f6 mt-2"-->
+                                    <!--                                       href="/TheAlgorithms/Java/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen">-->
+                                    <!--                                        2 issues-->
+                                    <!--                                        need help-->
+                                    <!--                                    </a>-->
 
                                 </div>
                             </div>
 
                             <div class="flex-shrink-0 col-6 col-md-4 pt-2 pr-md-3 d-flex">
-<!--                                <div class="text-gray flex-auto min-width-0">-->
-<!--                                    <div class="mr-3">-->
-<!--          <span>-->
-<!--  <span class="repo-language-color" style="background-color: #b07219"></span>-->
-<!--  <span itemprop="programmingLanguage">Java</span>-->
-<!--</span>-->
+                                <!--                                <div class="text-gray flex-auto min-width-0">-->
+                                <!--                                    <div class="mr-3">-->
+                                <!--          <span>-->
+                                <!--  <span class="repo-language-color" style="background-color: #b07219"></span>-->
+                                <!--  <span itemprop="programmingLanguage">Java</span>-->
+                                <!--</span>-->
 
-<!--                                    </div>-->
-<!--                                </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
 
                                 <div class="pl-2 pl-md-0 text-right flex-auto min-width-0">
                                     <a class="muted-link" href="/TheAlgorithms/Java/stargazers">
-                                        <img src="images/jinhai.jpeg" width="128" >
-<!--                                        <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16"-->
-<!--                                             version="1.1" width="14" height="16" role="img">-->
-<!--                                            <path fill-rule="evenodd"-->
-<!--                                                  d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/>-->
-<!--                                        </svg>-->
-<!--                                        14.8k-->
+                                        <img src="images/jinhai.jpeg" width="128">
+                                        <!--                                        <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16"-->
+                                        <!--                                             version="1.1" width="14" height="16" role="img">-->
+                                        <!--                                            <path fill-rule="evenodd"-->
+                                        <!--                                                  d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/>-->
+                                        <!--                                        </svg>-->
+                                        <!--                                        14.8k-->
                                     </a>
                                 </div>
                             </div>
@@ -2485,10 +2441,7 @@
                         <li class="repo-list-item d-flex flex-column flex-md-row flex-justify-start py-4 public source">
                             <div class="col-12 col-md-8 pr-md-3">
                                 <h3>
-                                    <a class="v-align-middle"
-                                       data-hydro-click="{&quot;event_type&quot;:&quot;search_result.click&quot;,&quot;payload&quot;:{&quot;page_number&quot;:1,&quot;per_page&quot;:10,&quot;query&quot;:&quot;java&quot;,&quot;result_position&quot;:1,&quot;click_id&quot;:63477660,&quot;result&quot;:{&quot;id&quot;:63477660,&quot;global_relay_id&quot;:&quot;MDEwOlJlcG9zaXRvcnk2MzQ3NzY2MA==&quot;,&quot;model_name&quot;:&quot;Repository&quot;,&quot;url&quot;:&quot;https://github.com/TheAlgorithms/Java&quot;},&quot;client_id&quot;:&quot;832503728.1554952581&quot;,&quot;originating_request_id&quot;:&quot;A6DE:592A:738121:A30ADC:5D0A21AE&quot;,&quot;originating_url&quot;:&quot;https://github.com/search?q=java&quot;,&quot;referrer&quot;:&quot;https://github.com/&quot;,&quot;user_id&quot;:38208164}}"
-                                       data-hydro-click-hmac="92b2dbd3fae02e16e85acdc52628ba9aa27e0a730bac60d144daee52ec386410"
-                                       href="/TheAlgorithms/Java">吴松</em></a>
+                                    <a class="v-align-middle" href="http://faculty.hust.edu.cn/wusong2/zh_CN/index.htm">吴松</em></a>
 
                                 </h3>
 
@@ -2497,16 +2450,11 @@
                                 </p>
 
                                 <div class="topics-row-container col-12 col-md-9 d-inline-flex flex-wrap flex-items-center f6 my-1">
-                                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/java" title="Topic: java"
-                                       data-ga-click="Topic, search results" data-octo-click="topic_click"
-                                       data-octo-dimensions="topic:java,repository_id:63477660,repository_nwo:TheAlgorithms/&lt;em&gt;Java&lt;/em&gt;,repository_public:true,repository_is_fork:false">
+                                    <a class="topic-tag topic-tag-link f6 my-1" >
                                         教授
                                     </a>
 
-                                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/algorithms"
-                                       title="Topic: algorithms" data-ga-click="Topic, search results"
-                                       data-octo-click="topic_click"
-                                       data-octo-dimensions="topic:algorithms,repository_id:63477660,repository_nwo:TheAlgorithms/&lt;em&gt;Java&lt;/em&gt;,repository_public:true,repository_is_fork:false">
+                                    <a class="topic-tag topic-tag-link f6 my-1" >
                                         博士生导师
                                     </a>
                                 </div>
@@ -2538,8 +2486,8 @@
                                 <!--                                </div>-->
 
                                 <div class="pl-2 pl-md-0 text-right flex-auto min-width-0">
-                                    <a class="muted-link" href="/TheAlgorithms/Java/stargazers">
-                                        <img src="images/wusong.jpg" width="128" >
+                                    <a class="muted-link" href="http://faculty.hust.edu.cn/wusong2/zh_CN/index.htm">
+                                        <img src="images/wusong.jpg" width="128">
                                         <!--                                        <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16"-->
                                         <!--                                             version="1.1" width="14" height="16" role="img">-->
                                         <!--                                            <path fill-rule="evenodd"-->
@@ -2553,10 +2501,7 @@
                         <li class="repo-list-item d-flex flex-column flex-md-row flex-justify-start py-4 public source">
                             <div class="col-12 col-md-8 pr-md-3">
                                 <h3>
-                                    <a class="v-align-middle"
-                                       data-hydro-click="{&quot;event_type&quot;:&quot;search_result.click&quot;,&quot;payload&quot;:{&quot;page_number&quot;:1,&quot;per_page&quot;:10,&quot;query&quot;:&quot;java&quot;,&quot;result_position&quot;:1,&quot;click_id&quot;:63477660,&quot;result&quot;:{&quot;id&quot;:63477660,&quot;global_relay_id&quot;:&quot;MDEwOlJlcG9zaXRvcnk2MzQ3NzY2MA==&quot;,&quot;model_name&quot;:&quot;Repository&quot;,&quot;url&quot;:&quot;https://github.com/TheAlgorithms/Java&quot;},&quot;client_id&quot;:&quot;832503728.1554952581&quot;,&quot;originating_request_id&quot;:&quot;A6DE:592A:738121:A30ADC:5D0A21AE&quot;,&quot;originating_url&quot;:&quot;https://github.com/search?q=java&quot;,&quot;referrer&quot;:&quot;https://github.com/&quot;,&quot;user_id&quot;:38208164}}"
-                                       data-hydro-click-hmac="92b2dbd3fae02e16e85acdc52628ba9aa27e0a730bac60d144daee52ec386410"
-                                       href="/TheAlgorithms/Java">廖小飞</em></a>
+                                    <a class="v-align-middle" href="http://faculty.hust.edu.cn/xfliao/zh_CN/index.htm">廖小飞</em></a>
 
                                 </h3>
 
@@ -2565,16 +2510,11 @@
                                 </p>
 
                                 <div class="topics-row-container col-12 col-md-9 d-inline-flex flex-wrap flex-items-center f6 my-1">
-                                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/java" title="Topic: java"
-                                       data-ga-click="Topic, search results" data-octo-click="topic_click"
-                                       data-octo-dimensions="topic:java,repository_id:63477660,repository_nwo:TheAlgorithms/&lt;em&gt;Java&lt;/em&gt;,repository_public:true,repository_is_fork:false">
+                                    <a class="topic-tag topic-tag-link f6 my-1" >
                                         教授
                                     </a>
 
-                                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/algorithms"
-                                       title="Topic: algorithms" data-ga-click="Topic, search results"
-                                       data-octo-click="topic_click"
-                                       data-octo-dimensions="topic:algorithms,repository_id:63477660,repository_nwo:TheAlgorithms/&lt;em&gt;Java&lt;/em&gt;,repository_public:true,repository_is_fork:false">
+                                    <a class="topic-tag topic-tag-link f6 my-1" >
                                         博士生导师
                                     </a>
                                 </div>
@@ -2606,8 +2546,8 @@
                                 <!--                                </div>-->
 
                                 <div class="pl-2 pl-md-0 text-right flex-auto min-width-0">
-                                    <a class="muted-link" href="/TheAlgorithms/Java/stargazers">
-                                        <img src="images/liaoxiaofei.jpg" width="128" >
+                                    <a class="muted-link" href="http://faculty.hust.edu.cn/xfliao/zh_CN/index.htm">
+                                        <img src="images/liaoxiaofei.jpg" width="128">
                                         <!--                                        <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16"-->
                                         <!--                                             version="1.1" width="14" height="16" role="img">-->
                                         <!--                                            <path fill-rule="evenodd"-->
@@ -2650,7 +2590,7 @@
                                 <div class="d-flex flex-wrap">
 
                                     <p class="f6 text-gray mr-3 mb-0 mt-2">
-                                        近年来从事视频编码与智能处理、网络视频流系统和下一代无线网络与车联网等方面的研究和教学工作。作为项目负责人主持包括2项国家自然科学基金...                                    </p>
+                                        近年来从事视频编码与智能处理、网络视频流系统和下一代无线网络与车联网等方面的研究和教学工作。作为项目负责人主持包括2项国家自然科学基金... </p>
 
                                     <!--                                    <a class="muted-link f6 mt-2"-->
                                     <!--                                       href="/TheAlgorithms/Java/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen">-->
@@ -2674,7 +2614,7 @@
 
                                 <div class="pl-2 pl-md-0 text-right flex-auto min-width-0">
                                     <a class="muted-link" href="/TheAlgorithms/Java/stargazers">
-                                        <img src="images/guohongxing.jpg" width="128" >
+                                        <img src="images/guohongxing.jpg" width="128">
                                         <!--                                        <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16"-->
                                         <!--                                             version="1.1" width="14" height="16" role="img">-->
                                         <!--                                            <path fill-rule="evenodd"-->
@@ -2690,15 +2630,15 @@
                     <div class="paginate-container codesearch-pagination-container">
                         <div class="d-flex d-md-inline-block pagination" data-pjax="true"><span
                                 class="previous_page disabled">上一页</span> <em class="current"
-                                                                                   data-total-pages="100">1</em> <a
+                                                                              data-total-pages="100">1</em> <a
                                 rel="next" href="/search?p=2&amp;q=java&amp;type=Repositories">2</a> <a
                                 href="/search?p=3&amp;q=java&amp;type=Repositories">3</a> <a
                                 href="/search?p=4&amp;q=java&amp;type=Repositories">4</a> <a
                                 href="/search?p=5&amp;q=java&amp;type=Repositories">5</a> <span
                                 class="gap">&hellip;</span> <a
                                 href="/search?p=99&amp;q=java&amp;type=Repositories">10</a> <a class="next_page"
-                                                                                                 rel="next"
-                                                                                                 href="/search?p=2&amp;q=java&amp;type=Repositories">下一页
+                                                                                               rel="next"
+                                                                                               href="/search?p=2&amp;q=java&amp;type=Repositories">下一页
                         </a>
                         </div>
                     </div>
@@ -2708,60 +2648,99 @@
             </div>
             <div class="paginate-container ">
                 <div class="col-md-3 mt-6 mt-md-0">
-                <h2 class="h6 text-uppercase border-bottom pb-5 pb-md-3">相关推荐</h2>
-                <dl class="mt-3 mb-6">
-                    <dt class="d-none f6 text-gray">
-                        Repository
-                    </dt>
-                    <dd class="mb-2">
-                        <svg t="1561551328547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2325" width="16" height="16"><path d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0" fill="" p-id="2326"></path></svg>
-                        <a href="https://github.com/vuejs/vue" data-ga-click="Topics, go to vuejs/vue, location:topic page"><span class="css-truncate css-truncate-target" title="vuejs/vue">冯丹</span></a>
-                    </dd>
+                    <h2 class="h6 text-uppercase border-bottom pb-5 pb-md-3">相关推荐</h2>
+                    <dl class="mt-3 mb-6">
+                        <dt class="d-none f6 text-gray">
+                            Repository
+                        </dt>
+                        <dd class="mb-2">
+                            <svg t="1561551328547" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" p-id="2325" width="16" height="16">
+                                <path d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0"
+                                      fill="" p-id="2326"></path>
+                            </svg>
+                            <a href="https://github.com/vuejs/vue"
+                               data-ga-click="Topics, go to vuejs/vue, location:topic page"><span
+                                    class="css-truncate css-truncate-target" title="vuejs/vue">冯丹</span></a>
+                        </dd>
 
-                    <dt class="d-none f6 text-gray">Website</dt>
-                    <dd class="mb-2">
-                        <svg t="1561551328547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2325" width="16" height="16"><path d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0" fill="" p-id="2326"></path></svg>
-                        <a href="https://vuejs.org/" data-ga-click="Topics, go to external url, location:topic page"><span class="css-truncate css-truncate-target" title="vuejs.org">于俊清</span></a>
-                    </dd>
+                        <dt class="d-none f6 text-gray">Website</dt>
+                        <dd class="mb-2">
+                            <svg t="1561551328547" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" p-id="2325" width="16" height="16">
+                                <path d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0"
+                                      fill="" p-id="2326"></path>
+                            </svg>
+                            <a href="https://vuejs.org/"
+                               data-ga-click="Topics, go to external url, location:topic page"><span
+                                    class="css-truncate css-truncate-target" title="vuejs.org">于俊清</span></a>
+                        </dd>
 
-                    <dt class="d-none f6 text-gray">Wikipedia</dt>
-                    <dd class="mb-2">
-                        <svg t="1561551328547" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2325" width="16" height="16"><path d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0" fill="" p-id="2326"></path></svg>                        <a href="https://en.wikipedia.org/wiki/Vue.js" data-ga-click="Topics, go to Wikipedia entry, location:topic page">邹复好</a>
-                    </dd>
-                </dl>
+                        <dt class="d-none f6 text-gray">Wikipedia</dt>
+                        <dd class="mb-2">
+                            <svg t="1561551328547" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" p-id="2325" width="16" height="16">
+                                <path d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0"
+                                      fill="" p-id="2326"></path>
+                            </svg>
+                            <a href="https://en.wikipedia.org/wiki/Vue.js"
+                               data-ga-click="Topics, go to Wikipedia entry, location:topic page">邹复好</a>
+                        </dd>
+                    </dl>
 
 
-                <div class="d-sm-flex flex-justify-between flex-items-baseline border-bottom pb-5 pb-md-3 mb-3">
-                    <h2 class="h6 text-uppercase">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;热门搜索词</h2>
+                    <div class="d-sm-flex flex-justify-between flex-items-baseline border-bottom pb-5 pb-md-3 mb-3">
+                        <h2 class="h6 text-uppercase">热门搜索词</h2>
+                    </div>
+
+                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/angular" title="Topic: angular"
+                       data-ga-click="Topics, go to topic, location:related topics">
+                        大数据
+                    </a>
+
+                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/react" title="Topic: react"
+                       data-ga-click="Topics, go to topic, location:related topics">
+                        云计算
+                    </a>
+
+                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/webpack" title="Topic: webpack"
+                       data-ga-click="Topics, go to topic, location:related topics">
+                        系统软件
+                    </a>
+
+                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/demo" title="Topic: demo"
+                       data-ga-click="Topics, go to topic, location:related topics">
+                        体系结构
+                    </a>
+
+                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/vue-router" title="Topic: vue-router"
+                       data-ga-click="Topics, go to topic, location:related topics">
+                        数据库
+                    </a>
+
+                    <a class="topic-tag topic-tag-link f6 my-1" href="/topics/css" title="Topic: css"
+                       data-ga-click="Topics, go to topic, location:related topics">
+                        云存储
+                    </a>
+                    <dl class="mt-3 mb-6"></dl>
+
+                    <h2 class="h6 text-uppercase border-bottom pb-5 pb-md-3">历史记录</h2>
+                    <dl class="mt-3 mb-6">
+                        <dt class="d-none f6 text-gray">
+
+                        </dt>
+                        <dd class="mb-2">
+
+                            <a href="" ><svg t="1561551328547" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" p-id="2325" width="16" height="16">
+                                <path d="M510.45 70.554c-243.163 0-442.115 198.951-442.115 442.115 0 243.16 198.952 442.11 442.116 442.11 243.159 0 442.11-198.95 442.11-442.11 0-243.165-198.951-442.115-442.11-442.115z m11.051 132.633c168.556 0 168.556 127.11 168.556 198.95 0 71.847-66.318 204.48-168.556 207.24-99.475 0-168.556-132.632-168.556-207.24 0.001-71.841 0.001-198.95 168.556-198.95z m-11.05 726.723c-127.11 0-243.164-58.03-320.534-149.211 11.051-27.635 24.868-58.03 44.212-74.607 41.446-33.162 165.79-88.425 165.79-88.425l77.37 149.215 13.816-35.923L469 686.747l44.212-44.208 44.212 44.208-19.345 46.974 11.055 35.924 80.132-146.45s124.343 55.262 165.793 88.424c19.34 13.813 33.157 38.685 41.447 60.787C761.9 869.12 643.082 929.91 510.45 929.91z m0 0"
+                                      fill="" p-id="2326"></path>
+                            </svg><span class="css-truncate css-truncate-target" title="vuejs/vue">金海</span></a>
+                        </dd>
+                    </dl>
+
                 </div>
-
-                <a class="topic-tag topic-tag-link f6 my-1" href="/topics/angular" title="Topic: angular" data-ga-click="Topics, go to topic, location:related topics">
-                    大数据
-                </a>
-
-                <a class="topic-tag topic-tag-link f6 my-1" href="/topics/react" title="Topic: react" data-ga-click="Topics, go to topic, location:related topics">
-                    云计算
-                </a>
-
-                <a class="topic-tag topic-tag-link f6 my-1" href="/topics/webpack" title="Topic: webpack" data-ga-click="Topics, go to topic, location:related topics">
-                    系统软件
-                </a>
-
-                <a class="topic-tag topic-tag-link f6 my-1" href="/topics/demo" title="Topic: demo" data-ga-click="Topics, go to topic, location:related topics">
-                    体系结构
-                </a>
-
-                <a class="topic-tag topic-tag-link f6 my-1" href="/topics/vue-router" title="Topic: vue-router" data-ga-click="Topics, go to topic, location:related topics">
-                    数据库
-                </a>
-
-                <a class="topic-tag topic-tag-link f6 my-1" href="/topics/css" title="Topic: css" data-ga-click="Topics, go to topic, location:related topics">
-                    云存储
-                </a>
-
-
-
-            </div></div>
+            </div>
 
             <div class="px-3 d-block d-sm-none">
                 <a href="/search/advanced?q=java" class="f6">Advanced search</a>

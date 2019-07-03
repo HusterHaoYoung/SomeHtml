@@ -4272,7 +4272,7 @@ a.tabnav-extra:hover {
 .paginate-container {
     margin-bottom: 15px;
     margin-top: 20px;
-    text-align: center
+    /*text-align: center*/
 }
 
 .paginate-container .pagination {

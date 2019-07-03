@@ -1,0 +1,35 @@
+
+/*框架结构*/
+
+/*头部*/
+/*.header p,.header ul{margin:0;padding:0}*/
+/*.header li{font-family:"Microsoft YaHei";list-style:none}*/
+/*.header a{font-family:"microsoft yahei" !important;color:#333;text-decoration:none}*/
+.header a:visited,.header a:active,.header a:link{color:#333}
+.header .e_icon{background:url(//img01.51jobcdn.com/im/2016/icon/header.png) no-repeat}
+.header .in{width:1002px;margin:0 auto}
+.header .bar .icon_arrow{position:relative;display:inline-block;top:3px;*top:0;margin-left:3px;background-position:-16px 0}
+.header .bar a{font-size:14px !important}
+
+/*.header .nag .logo{float:left;margin-top:8px}*/
+.header .nag .nlink{float:right}
+.header .nag .nlink a{float:left;height:56px;font-size:16px;margin-left:40px}
+/*.header .nag .nlink.n2 a{font-size:14px;margin-left:30px}*/
+/*.header .nag .nlink.n2 .on{border-bottom:0 none}*/
+/*.header .nag .tl{float:left;font-size:22px;color:#333}*/
+/*.header .gp{float:left;width:1px;height:22px;font-size:0;margin:17px 10px 0;background-color:#e8e8e8}*/
+
+
+/*.en .header .nag .nlink a{margin-left:20px}*/
+/*.en .header .uer ul:hover .e_icon{width:228px}*/
+/*.en .header .uer .e_icon .point{background-position:200px 5px}*/
+/*.en .header.fix .el ul{width:98px}*/
+/*.en .header .el .ipt{width:357px;padding-left:98px}*/
+
+
+
+/*.header{position:relative;min-width:1002px;font:14px "Microsoft YaHei";z-index:998}*/
+
+.header .nag,.header .snag{height:56px;line-height:56px;background-color:#fff;border-bottom:1px solid #e8e8e8}
+/*.header .bar,.header .nag,.header .snag{z-index:1}*/
+
